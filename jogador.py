@@ -32,4 +32,9 @@ class Jogador:
     @show_defense_player.setter
     def __modify_defense_player(self,value):
         self.__defense_player += value
+
+    def modify_atack(self,value):
+        self.__modify_atack_player = value
+   
+
    
