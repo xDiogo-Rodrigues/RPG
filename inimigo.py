@@ -24,6 +24,10 @@ class Inimigo:
      @property
      def show_defense_enemy(self):
         return self.__defense_enemy
+     
+     
+     def attack_player(self, target):
+        pass
     
     
 
