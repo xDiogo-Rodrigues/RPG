@@ -1,3 +1,4 @@
+import calculate_damage as c
 class Inimigo:
      def __init__(self, name_enemy, hp_enemy, atack_enemy, defense_enemy):
         self.__name_enemy = name_enemy
@@ -27,7 +28,10 @@ class Inimigo:
      
      
      def attack_player(self, target):
-        pass
+        c.calculate_damage(self, target)
+
+     def modify_hp(self, damage):
+        self.__modify_hp_enemy = damage
     
     
 

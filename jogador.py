@@ -1,3 +1,4 @@
+import calculate_damage as c
 class Jogador:
     def __init__(self, name_player, hp_player, atack_player, defense_player):
         self.__name_player = name_player
@@ -33,9 +34,12 @@ class Jogador:
     def __modify_defense_player(self,value):
         self.__defense_player += value
 
-
     def attack_enemy(self, target):
-        pass
+        c.calculate_damage(self, target)
+
+    def modify_hp(self, damage):
+        self.__modify_hp_player = damage
+        
    
 
    
